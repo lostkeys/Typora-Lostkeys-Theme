@@ -270,6 +270,51 @@ p {
   background: var(--accented-background-color);
 } 
 
+/* code tooltip */
+.code-tooltip {
+  box-shadow: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background-color: var(--accented-background-color);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+
+.code-tooltip input {
+  outline: none;
+  width: 20ch;
+}
+
+.md-fences .code-tooltip {
+  bottom: 0;
+  padding: none;
+}
+
+.md-fences.md-focus .cm-s-inner {
+  /* Remove bottom right border radius when tooltip is shown */
+  border-bottom-right-radius: 0;
+}
+
+/* code tooltip autocomplete list */
+.autoComplt-list {
+  width: 20ch !important;
+  border-radius: var(--border-radius) !important;
+  background-color: var(--accented-background-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.autoComplt-hint {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0.125rem 0.375rem !important;
+  color: var(--text-color) !important;
+  line-height: var(--line-height) !important;
+  height: 1.4rem !important;
+}
+.autoComplt-hint-selected {
+  background-color: var(--link-color) !important;
+  color: var(--background-color) !important;
+}
 
 /**
  * Mermaid Diagrams
