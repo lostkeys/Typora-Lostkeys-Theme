@@ -179,6 +179,8 @@ h3::before {
 
 /* table */
 table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* table header */
@@ -191,6 +193,17 @@ tr {}
 /* table cell */
 td,
 th {
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px 0;
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+}
+
+/* Remove table top border if immediately after a H2 which has a border already */
+h2 + table tr:first-child th,
+h2 + table tr:first-child td,
+  border-top-width: 0;
 }
 
 /* tooltip above tables */
