@@ -124,10 +124,10 @@ content {
 
 /* yaml */
 pre.md-meta-block {
-  padding: .5rem;
-  background-color: var(--accented-background-color);
+  background-color: var(--background-color);
+  padding-bottom: .5rem;
   color: var(--accent-color);
-  border-radius: var(--border-radius)
+  border-bottom: 2px solid var(--border-color);
 }
 
 /* headings */

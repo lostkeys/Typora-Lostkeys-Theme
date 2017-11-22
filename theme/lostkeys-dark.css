@@ -1,11 +1,11 @@
 @import 'lostkeys.css';
 
 :root {
-  --accent-color: #747e82;
+  --accent-color: #4A5459;
   --accented-background-color: #303b41;
   --background-color: #263238;
   --font-color: #ecedef;
   --header-color: #ecedef;
-  --border-color: #434e53;
-  --link-color: #3498db;
+  --border-color: #4A5459;
+  --link-color: #4FC3F7;
 }
