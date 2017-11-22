@@ -7,7 +7,7 @@
   --link-color: #f0423d;
   --background-color: white;
   --accented-background-color: #fafafa;
-
+  /* */
   --body-font: 'source-sans-pro', sans-serif;
   --monospace-font: 'source-code-pro', monospace;
   --font-size: 16px;
@@ -20,12 +20,18 @@
   --main-content-margin: 0 auto;
   --nav-width: 200px;
   --border-radius: 2px;
-  --document-padding-x: 4ch;
+  --document-padding-x: 10ch;
+  --h1-fontsize: 2rem;
+  --h2-fontsize: 1.5rem;
+  --h3-fontsize: 1.125rem;
 }
 
-@media (min-width: 640px) {
+/* Narrow layout styles */
+@media (max-width: 640px) {
   :root {
-    --document-padding-x: 10ch;
+    --document-padding-x: 4ch;
+    --h1-fontsize: 1.5rem;
+    --h2-fontsize: 1.125rem;
   }
 }
 
@@ -128,7 +134,7 @@ pre.md-meta-block {
 h1 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: var(--h1-fontsize);
   font-weight: bold;
   color: var(--header-color);
 }
@@ -140,7 +146,7 @@ h1:not(:first-child) {
 h2 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: var(--h2-fontsize);
   font-weight: bold;
   color: var(--header-color);
 }
@@ -148,7 +154,7 @@ h2 {
 h3 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1.125rem;
+  font-size: var(--h3-fontsize);
   font-weight: bold;
   color: var(--header-color);
 }
