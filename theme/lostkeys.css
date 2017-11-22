@@ -1,25 +1,32 @@
  :root {
   --accent-color: #c1cacc;
-  --border-color: #e1e7e8;  
+  --border-color: #e1e7e8;
   --code-bg-color: #f8f8f8;
   --font-color: #5b6666;
   --header-color: #363c3c;
   --link-color: #f0423d;
   --background-color: white;
-  --accented-background-color: #fafafa; 
+  --accented-background-color: #fafafa;
 
   --body-font: 'source-sans-pro', sans-serif;
   --monospace-font: 'source-code-pro', monospace;
-  --font-size: 16px;  
+  --font-size: 16px;
   --monospace-font-size: 14px;
   --line-height: 1.4;
   --monospace-line-height: 1.4;
   --vertical-padding: 40px;
   --document-horizontal-margin: 80px;
-  --main-content-max-width: 800px;
-  --main-content-margin: 0 auto;  
+  --main-content-max-width: 100ch;
+  --main-content-margin: 0 auto;
   --nav-width: 200px;
   --border-radius: 2px;
+  --document-padding-x: 4ch;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --document-padding-x: 10ch;
+  }
 }
 
 /* Regular font */
@@ -98,9 +105,10 @@ content {
 
 #write {
 	/* size of writing area: */
-  padding-left: 10ch;
-  padding-right: 10ch;
-  max-width: 120ch;
+  padding-left: var(--document-padding-x);
+  padding-right: var(--document-padding-x);
+  max-width: var(--main-content-max-width);
+  box-sizing: border-box;
 }
 
 /**
@@ -119,10 +127,10 @@ pre.md-meta-block {
 /* headings */
 h1 {
   margin-top: 3rem;
-  margin-bottom: 1.5rem;  
+  margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
-  color: var(--header-color); 
+  color: var(--header-color);
 }
 h1:not(:first-child) {
   margin-top: 3rem;
@@ -131,10 +139,10 @@ h1:not(:first-child) {
 
 h2 {
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;  
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  font-weight: bold;  
-  color: var(--header-color);  
+  font-weight: bold;
+  color: var(--header-color);
 }
 
 h3 {
@@ -142,14 +150,14 @@ h3 {
   margin-bottom: 1rem;
   font-size: 1.125rem;
   font-weight: bold;
-  color: var(--header-color);  
+  color: var(--header-color);
 }
 
 h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: 0rem;
-  font-size: 1rem;  
-  color: var(--header-color);  
+  font-size: 1rem;
+  color: var(--header-color);
 }
 
 h1::before,
@@ -166,11 +174,11 @@ h3::before {
 }
 
 h1::before {
-  content: '#1';  
+  content: '#1';
 }
 
 h2::before {
-  content: '#2';  
+  content: '#2';
 }
 
 h3::before {
@@ -234,7 +242,7 @@ li p {
 
 .task-list-item {
   padding-left: 1.5em;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 #write input[type='checkbox'] {
@@ -244,9 +252,11 @@ li p {
 /* blockquote */
 blockquote {
   margin: 1rem 0;
-  padding-left: 4ch;
+  padding-left: 2ch;
+  margin-left: .5ch;
   position: relative;
   overflow: hidden;
+  border-left: 2px solid var(--border-color);
 }
 
 /* hr */
@@ -288,13 +298,13 @@ p {
 
 .cm-s-inner {
   border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);  
+  border-radius: var(--border-radius);
   padding: .25rem 0;
   background-color: var(--accented-background-color);
 }
 .cm-s-inner .CodeMirror-gutters {
   background: var(--accented-background-color);
-} 
+}
 
 /* code tooltip */
 .code-tooltip {
@@ -356,7 +366,10 @@ p {
 code {
   font-family: var(--monospace-font);
   font-size: var(--monospace-font-size);
-  line-height: var(--monospace-line-height);  
+  line-height: var(--monospace-line-height);
+  background-color: var(--border-color);
+  padding: 0 .125rem;
+  border-radius: .25rem;
 }
 
 strong {
@@ -380,7 +393,7 @@ img {
 mark {
 
 }
- 
+
 del {
 
 }
@@ -430,7 +443,7 @@ sup {
 /* button style */
 .btn,
 .btn .btn-default {
-	
+
 }
 
 /* outline area when popover */
