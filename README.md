@@ -1,6 +1,6 @@
 # Typora Lostkeys Theme
 
-_This theme is work in progress _
+_This theme is work in progress_
 
 Currently it is only tested on the MacOS version of Typora and it uses some bleeding edge CSS like variables which I have no idea if they work im Typora for other platforms. It is still plenty of work left before it is a complete theme.
 
