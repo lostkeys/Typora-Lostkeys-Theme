@@ -1,6 +1,6 @@
 # LostKeys Theme for Typora
 
-![preview](/Users/Fredrik/Sites/typora-lostkeys-theme/preview.png)
+![preview](preview.png)
 
 Lostkeys is a notes friendly theme for the excellent [Typora markdown text editor](Typora markdown text editor).
 
