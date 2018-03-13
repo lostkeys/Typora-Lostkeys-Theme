@@ -1,14 +1,14 @@
 # LostKeys Theme for Typora
 
-![preview](/Users/Fredrik/Sites/typora-lostkeys-theme/preview.png)
+![preview](preview.png)
 
-Lostkeys is a notes friendly theme for the excellent [Typora markdown text editor](Typora markdown text editor).
+Lostkeys is a theme for the excellent [Typora markdown text editor](Typora markdown text editor).
 
-The theme is currently only tested on the MacOS version, and it uses some bleeding edge CSS like custom properties (native variables) which may not work on other OSes.
+The theme is currently only tested on the MacOS, and it uses some bleeding edge CSS like custom properties (native variables) which may not work on other OSes.
 
 ## How to install
 
-...
+See  Typora support on [how to install themes](http://support.typora.io/About-Themes/)
 
 ## Caveats
 
