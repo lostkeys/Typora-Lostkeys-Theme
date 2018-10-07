@@ -1,3 +1,6 @@
+@import 'night/codeblock.dark.css';
+@import 'night/mermaid.dark.css';
+@import 'night/sourcemode.dark.css';
 @import 'lostkeys.css';
 
 :root {
@@ -8,4 +11,14 @@
   --header-color: #ecedef;
   --border-color: #4A5459;
   --link-color: #4FC3F7;
+
+  --bg-color: #263238;
+  --side-bar-bg-color: #263238;
+  --text-color: #ecedef;
+  --window-border: 1px solid rgba(0,0,0,.07);
+  --active-file-bg-color: black;
+}
+
+#write {
+    cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
 }
