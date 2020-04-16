@@ -6,17 +6,15 @@
 :root {
   --accent-color: #4A5459;
   --accented-background-color: #303b41;
-  --background-color: #263238;
-  --font-color: #ecedef;
+  --bg-color: #262626;
+  --text-color: #ecedef;
   --header-color: #ecedef;
   --border-color: #4A5459;
   --link-color: #4FC3F7;
 
-  --bg-color: #263238;
-  --side-bar-bg-color: #263238;
-  --text-color: #ecedef;
+  --side-bar-bg-color: #222222;
   --window-border: 1px solid rgba(0,0,0,.07);
-  --active-file-bg-color: black;
+  --active-file-bg-color: #1e1e1e;
 }
 
 #write {

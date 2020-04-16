@@ -1,12 +1,15 @@
  :root {
   --accent-color: #c1cacc;
   --accented-background-color: #fafafa;
-  --background-color: white;
+  --bg-color: white;
   --border-color: #e1e7e8;
   --code-bg-color: #f8f8f8;
-  --font-color: #5b6666;
+  --text-color: #5b6666;
   --header-color: #363c3c;
   --link-color: #f0423d;
+  --side-bar-bg-color: #fafafa;
+  --window-border: 1px solid rgba(0,0,0,.07);
+  --active-file-bg-color: #f2f2f2;
   /* */
   --body-font: 'source-sans-pro', sans-serif;
   --border-radius: 2px;
@@ -94,12 +97,12 @@
 
 html {
 	font-size: var(--font-size);
-	background-color: var(--background-color);
+	background-color: var(--bg-color);
 }
 
 html,
 body {
-  color: var(--font-color);
+  color: var(--text-color);
   font-family: var(--body-font);
   line-height: var(--line-height);
 }
@@ -124,7 +127,7 @@ content {
 
 /* yaml */
 pre.md-meta-block {
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
   padding-bottom: .5rem;
   color: var(--accent-color);
   border-bottom: 2px solid var(--border-color);
@@ -355,7 +358,7 @@ p {
 }
 .autoComplt-hint-selected {
   background-color: var(--link-color) !important;
-  color: var(--background-color) !important;
+  color: var(--bg-color) !important;
 }
 
 /**
@@ -477,7 +480,7 @@ sup {
 }
 
 #write div.md-toc-tooltip {
-	background-color: var(--background-color);
+	background-color: var(--bg-color);
 }
 
 /**
